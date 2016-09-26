@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TM_S4_26_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Iphone-6-Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RoQ-sz-8TP">
+                                <rect key="frame" x="1" y="0.0" width="374" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCF-3W-WSx">
+                                <rect key="frame" x="96" y="144" width="183" height="30"/>
+                                <color key="backgroundColor" red="0.48752570152282715" green="0.92347532510757446" blue="0.26426607370376587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ccW-6S-eQO"/>
+                                    <constraint firstAttribute="width" constant="183" id="wHt-CK-NA1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VaU-qb-wSI">
+                                <rect key="frame" x="96" y="200" width="183" height="30"/>
+                                <color key="backgroundColor" red="0.48752570152282715" green="0.92347532510757446" blue="0.26426607370376587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="LNd-ex-YfI"/>
+                                    <constraint firstAttribute="height" constant="30" id="n4L-kK-z3I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USe-bP-G6a">
+                                <rect key="frame" x="96" y="257" width="183" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="mdb-HD-khr"/>
+                                    <constraint firstAttribute="height" constant="44" id="sDw-Ii-NBQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Đăng Nhập">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ViS-iL-g7S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxl-k6-gGM">
+                                <rect key="frame" x="96" y="324" width="183" height="30"/>
+                                <state key="normal" title="Danh sách người dùng">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="USe-bP-G6a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Tp-9y-P5d"/>
+                            <constraint firstItem="OCF-3W-WSx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="Y1R-pt-oRL"/>
+                            <constraint firstItem="VaU-qb-wSI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i0s-b7-s3U"/>
+                            <constraint firstItem="VaU-qb-wSI" firstAttribute="top" secondItem="OCF-3W-WSx" secondAttribute="bottom" constant="26" id="jhT-fk-cHn"/>
+                            <constraint firstItem="OCF-3W-WSx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vxf-6C-mmc"/>
+                            <constraint firstItem="USe-bP-G6a" firstAttribute="top" secondItem="VaU-qb-wSI" secondAttribute="bottom" constant="27" id="xw8-tc-EwC"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textFieldPassword" destination="VaU-qb-wSI" id="pzz-fe-IwU"/>
+                        <outlet property="textFieldUser" destination="OCF-3W-WSx" id="OFt-l7-8aO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429.5" y="171.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Iphone-6-Background.jpg" width="1080" height="1920"/>
+    </resources>
+</document>
